@@ -1,0 +1,157 @@
+.scr-wizard-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.scr-location-selection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin: 30px 0;
+}
+
+.scr-location-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.scr-location-field label {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.scr-location-field select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #fff;
+}
+
+.scr-rate-details {
+    margin: 30px 0;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.scr-rate-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.scr-rate-item {
+    padding: 15px;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 6px;
+}
+
+.scr-rate-item h4 {
+    font-size: 14px;
+    color: #666;
+    margin: 0 0 5px;
+}
+
+.scr-rate-item p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+}
+
+.scr-wizard-step {
+    display: none;
+    padding: 20px;
+}
+
+.scr-wizard-step.active {
+    display: block;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.scr-wizard-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.scr-wizard-header h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.scr-mode-selection {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.scr-mode-option {
+    flex: 1;
+    max-width: 200px;
+    padding: 20px;
+    text-align: center;
+    background: #f8f9fa;
+    border: 2px solid #dee2e6;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.scr-mode-option:hover {
+    border-color: #007cba;
+    background: #f0f0f1;
+}
+
+.scr-mode-option.selected {
+    border-color: #007cba;
+    background: #f0f7fc;
+}
+
+.scr-mode-option h3 {
+    margin: 10px 0;
+    color: #333;
+}
+
+.scr-wizard-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.scr-wizard-navigation button {
+    padding: 8px 20px;
+    font-size: 14px;
+}
+
+.scr-progress-bar {
+    height: 4px;
+    background: #eee;
+    margin-bottom: 30px;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.scr-progress-bar-inner {
+    height: 100%;
+    background: #007cba;
+    transition: width 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}

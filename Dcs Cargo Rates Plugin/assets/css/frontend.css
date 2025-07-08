@@ -1,0 +1,66 @@
+.scr-rates-table-wrapper {
+    margin: 20px 0;
+    overflow-x: auto;
+}
+
+.scr-rates-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border: 1px solid #e2e4e7;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.scr-rates-table thead {
+    background: #f8f9fa;
+}
+
+.scr-rates-table th,
+.scr-rates-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #e2e4e7;
+    border-right: 1px solid #e2e4e7;
+}
+
+.scr-rates-table th:last-child,
+.scr-rates-table td:last-child {
+    border-right: none;
+}
+
+.scr-rates-table tbody tr:hover {
+    background: #f8f9fa;
+}
+
+.scr-rates-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .scr-rates-table {
+        font-size: 13px;
+    }
+
+    .scr-rates-table th,
+    .scr-rates-table td {
+        padding: 8px;
+    }
+}
+
+/* Print styles */
+@media print {
+    .scr-rates-table-wrapper {
+        overflow-x: visible;
+    }
+
+    .scr-rates-table {
+        border: 1px solid #000;
+    }
+
+    .scr-rates-table th,
+    .scr-rates-table td {
+        border-color: #000;
+    }
+}

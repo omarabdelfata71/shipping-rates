@@ -1,0 +1,95 @@
+/* Desktop and Tablet Styles - Only applies to screens larger than 768px */
+@media screen and (min-width: 769px) {
+    h2 {
+        font-size: 30px !important;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .scr-mode-option.active {
+        background: #e16d18;
+        border-color: #e16d18;
+        color: #fff;
+    }
+    
+    .scr-mode-option {
+        flex: 1;
+        padding: 15px;
+        text-align: center;
+        background: #f8f9fa;
+        border: 2px solid #ddd;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    
+    .scr-cargo-entry h3 {
+        margin-top: 0;
+        margin-bottom: 20px;
+        color: #e16d18;
+    }
+    
+    .scr-section {
+        margin-bottom: 30px;
+        padding: 20px;
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+    
+    .scr-section.scr-total-section {
+        background-color: #e16d18;
+    }
+    
+    .scr-total-cost h3 {
+        margin: 0;
+        color: white;
+    }
+    
+    .scr-input-group select, .scr-input-group input {
+        padding: 8px 12px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 18px;
+    }
+    
+    .scr-input-group label {
+        margin-bottom: 8px;
+        font-weight: 500;
+        font-size: 20px;
+    }
+    
+    .scr-add-cargo {
+        background: #28a745;
+        color: #000000;
+        font-size: 18px;
+    }
+    
+    .scr-add-cargo:hover {
+        background: #e16d18;
+        color: white;
+    }
+    
+    .scr-remove-cargo {
+        background: #dc3545;
+        color: #000000;
+        margin-top: 10px;
+        font-size: 18px;
+    }
+    
+    .scr-remove-cargo:hover {
+        background: #c82333;
+        color: white;
+    }
+    
+    .total-amount {
+        font-size: 22px;
+        font-weight: bold;
+    }
+    
+    .scr-total-cost h3 {
+        margin: 0;
+        font-size: 22px;
+        color: white;
+    }
+}

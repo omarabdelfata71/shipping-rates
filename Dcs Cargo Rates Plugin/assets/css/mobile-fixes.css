@@ -1,0 +1,138 @@
+/* Mobile Fixes CSS */
+
+/* Force mobile styles to apply */
+@media screen and (max-width: 768px) {
+    .scr-calculator-container {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 10px !important;
+        box-sizing: border-box !important;
+        margin: 0 auto !important;
+    }
+    
+    .scr-section {
+        width: 100% !important;
+        box-sizing: border-box !important;
+        padding: 15px !important;
+        margin-bottom: 10px !important;
+    }
+    
+    .scr-mode-options {
+        display: flex !important;
+        flex-direction: row !important;
+        gap: 10px !important;
+        width: 100% !important;
+    }
+    
+    .scr-mode-option {
+        width: 100% !important;
+        box-sizing: border-box !important;
+        padding: 8px !important;
+    }
+    
+    .scr-mode-option.active {
+        background: #e16d18 !important;
+        border-color: #e16d18 !important;
+        color: #fff;
+    }
+    
+    .scr-mode-option.active {
+        background: #e16d18 !important;
+        border-color: #e16d18 !important;
+        color: #fff;
+    }
+    
+    .scr-location-group {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 15px !important;
+        width: 100% !important;
+    }
+    
+    .scr-dimensions-group {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 15px !important;
+        width: 100% !important;
+    }
+    
+    .scr-input-group select,
+    .scr-input-group input,
+    .scr-dimension input {
+        width: 100% !important;
+        box-sizing: border-box !important;
+        height: 44px !important;
+        font-size: 16px !important;
+        -webkit-appearance: none !important;
+        appearance: none !important;
+    }
+    
+    .scr-add-cargo,
+    .scr-remove-cargo {
+        width: 100% !important;
+        box-sizing: border-box !important;
+        padding: 12px !important;
+        font-size: 16px !important;
+        margin-top: 15px !important;
+        color: black !important;
+    }
+    
+    .scr-total-cost {
+        flex-direction: row !important;
+        align-items: center !important;
+    }
+    
+    .total-amount {
+        margin-top: 0px !important;
+        font-size: 18px !important;
+    }
+    
+    .scr-info-item {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    
+    .scr-cargo-entry h3 {
+        margin-top: 0;
+        margin-bottom: 20px;
+        color: #e16d18;
+        font-size: 18px;
+    }
+    
+    .scr-total-cost h3 {
+        margin: 0;
+        font-size: 18px;
+        color: white;
+    }
+    
+    /* Fix for iOS input fields */
+    input[type="number"] {
+        -webkit-appearance: none !important;
+        margin: 0 !important;
+    }
+}
+
+/* Extra small devices */
+@media screen and (max-width: 480px) {
+    .scr-calculator-container {
+        padding: 8px !important;
+    }
+    
+    .scr-section {
+        padding: 12px !important;
+    }
+    
+    .scr-result-item {
+        flex-direction: row !important;
+        align-items: flex-start !important;
+    }
+    
+    .scr-total-section {
+        background: #e16d18;
+        color: #ffffff;
+    }
+    
+    .result-label {
+        margin-bottom: 3px !important;
+    }
+}
